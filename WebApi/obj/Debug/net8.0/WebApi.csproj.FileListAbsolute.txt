@@ -31,7 +31,6 @@
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WebApi.props
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/staticwebassets.pack.json
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/scopedcss/bundle/WebApi.styles.css
-/home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/WebApi.csproj.CopyComplete
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/WebApi.dll
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/refint/WebApi.dll
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/WebApi.pdb
@@ -43,3 +42,5 @@
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/bin/Debug/net8.0/MediatR.Contracts.dll
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /home/shivesh/Documents/dotnet/clean_setup/WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/WebApi.sourcelink.json
+/home/shivesh/Documents/dotnet/clean_setup/WebApi/obj/Debug/net8.0/WebApi.csproj.Up2Date
