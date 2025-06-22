@@ -9,4 +9,7 @@ public interface IUserRepository
     void Add(User user);
 
     public User? ValidateCredentials(string email, string password);
+
+    public void SaveChanges();
+    
 }

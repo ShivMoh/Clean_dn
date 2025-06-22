@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Infrastructure
-build_property.ProjectDir = /home/shivesh/Documents/dotnet/clean_setup/Infrastructure/
+build_property.ProjectDir = /home/shivesh/.var/app/com.fightcade.Fightcade/data/wineprefixes/wine-8.0.1/dosdevices/z:/proc/31751/fd/14/shivesh/Documents/dotnet/clean_setup/Infrastructure/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gDWDbmHONqTYR4P0RvX1RaEtbQMCpFUoON99cmC1+S0H2WbWXgJjIly2Jix3nc/Jo70foQdBpBR6epkuMPxfag==",
+  "dgSpecHash": "7eGZBryINik=",
   "success": true,
   "projectFilePath": "/home/shivesh/Documents/dotnet/clean_setup/Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/shivesh/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
+    "/home/shivesh/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/home/shivesh/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/shivesh/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

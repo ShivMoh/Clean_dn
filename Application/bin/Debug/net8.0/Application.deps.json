@@ -9,13 +9,24 @@
       "Application/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
+          "ErrorOr": "2.0.1",
           "FluentValidation": "11.9.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.0",
-          "MediatR": "12.2.0",
+          "Mapster": "7.4.1-pre01",
+          "Mapster.DependencyInjection": "1.0.2-pre01",
+          "MediatR": "12.4.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0"
         },
         "runtime": {
           "Application.dll": {}
+        }
+      },
+      "ErrorOr/2.0.1": {
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
         }
       },
       "FluentValidation/11.9.0": {
@@ -38,7 +49,38 @@
           }
         }
       },
-      "MediatR/12.2.0": {
+      "Mapster/7.4.1-pre01": {
+        "dependencies": {
+          "Mapster.Core": "1.2.2-pre01"
+        },
+        "runtime": {
+          "lib/net8.0/Mapster.dll": {
+            "assemblyVersion": "7.4.1.0",
+            "fileVersion": "7.4.1.0"
+          }
+        }
+      },
+      "Mapster.Core/1.2.2-pre01": {
+        "runtime": {
+          "lib/net8.0/Mapster.Core.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.2.0"
+          }
+        }
+      },
+      "Mapster.DependencyInjection/1.0.2-pre01": {
+        "dependencies": {
+          "Mapster": "7.4.1-pre01",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Mapster.DependencyInjection.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "MediatR/12.4.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
@@ -46,7 +88,7 @@
         "runtime": {
           "lib/net6.0/MediatR.dll": {
             "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.2.0.0"
+            "fileVersion": "12.4.0.0"
           }
         }
       },
@@ -124,6 +166,10 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "ErrorOr": "2.0.1",
+          "MediatR": "12.4.0"
+        },
         "runtime": {
           "Domain.dll": {}
         }
@@ -135,6 +181,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ErrorOr/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aje9lUVEAsusPFmaRcVM5EUqWBofd7hYtb9N8+ycgPYrtOzyFajMpzRgIO4uuiCllNLBc3x48+cpA+4v4koUDQ==",
+      "path": "erroror/2.0.1",
+      "hashPath": "erroror.2.0.1.nupkg.sha512"
     },
     "FluentValidation/11.9.0": {
       "type": "package",
@@ -150,12 +203,33 @@
       "path": "fluentvalidation.dependencyinjectionextensions/11.9.0",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512"
     },
-    "MediatR/12.2.0": {
+    "Mapster/7.4.1-pre01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8TUFrHapKi6D74PhnSNEguRsH91HNGyP3R4ZQdgDorJgl9Wac5Prh0vA33QfrniAaS6L2xNNhc6vxzg+5AIbwA==",
-      "path": "mediatr/12.2.0",
-      "hashPath": "mediatr.12.2.0.nupkg.sha512"
+      "sha512": "sha512-b7YEDoh4nuODGF7wUjgkxA3bTLLt7TxfPkKiFQTgCrNYHem1VVaJyXgsG9RVeQQ44+hoo69IfqENNKn0ox9ddg==",
+      "path": "mapster/7.4.1-pre01",
+      "hashPath": "mapster.7.4.1-pre01.nupkg.sha512"
+    },
+    "Mapster.Core/1.2.2-pre01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FuNCfTHytW9yeSuGHZ9f8u4cgbzhPL0GqoypA4LD99m0zkafs73IcaMxmbUtYjRThof+Z+jcEQ/suVYTkMpTkA==",
+      "path": "mapster.core/1.2.2-pre01",
+      "hashPath": "mapster.core.1.2.2-pre01.nupkg.sha512"
+    },
+    "Mapster.DependencyInjection/1.0.2-pre01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SYsYsi5fUeAIJGTmx4JaV2wm4A5Lz7jlmlVp4nW3RHs6WlCu/5g7heKbnJi72L1DPzFhVRCKRUq1ud1qGxiLQw==",
+      "path": "mapster.dependencyinjection/1.0.2-pre01",
+      "hashPath": "mapster.dependencyinjection.1.0.2-pre01.nupkg.sha512"
+    },
+    "MediatR/12.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s8xhhvsTQqt7jI1XeVqcniiph/QoRmJb1qxVgk7UFpAgOzpzZ0VTl8zV+lFJgxISVqZuJRjmxF+P3AuHyelCrg==",
+      "path": "mediatr/12.4.0",
+      "hashPath": "mediatr.12.4.0.nupkg.sha512"
     },
     "MediatR.Contracts/2.0.1": {
       "type": "package",

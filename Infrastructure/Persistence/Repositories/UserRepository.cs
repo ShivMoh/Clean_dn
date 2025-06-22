@@ -1,36 +1,43 @@
 using Application.Common.Interfaces.Persistence;
+using Domain.Common.Models;
 using Domain.Entities;
+using Domain.Entities.Events;
+using Infrastructure.DataContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistence.Repository;
 
 public class UserRepository : IUserRepository
 {
-    private static User[] users = 
-        [
-            new User() {
-                Email = "test1@gmail.com",
-                Password = "password"
-            },
+    private readonly ApplicationDbContext _dbContext;
 
-            new User() {
-                Email = "test2@gmail.com",
-                Password = "passwordaswell"
-            }
-        ];
-        
+    public UserRepository(ApplicationDbContext dbContext) {
+        _dbContext = dbContext;
+    }    
+
     public void Add(User user)
     {
-        users.Append<User>(user);
+
+        UserCreated userCreated = new UserCreated(user);
+        user.AddDomainEvent(userCreated);
+        _dbContext.Users.Add(user);
+        // _dbContext.SaveChanges();
+
         return;
     }
 
     public User? GetUserByEmail(string email)
     {
-        return users.FirstOrDefault((user) => user.Email == email);
+      
+        return _dbContext.Users.FirstOrDefault((user) => user.Email == email);
     }
 
     public User? ValidateCredentials(string email, string password)
     {
-        return users.FirstOrDefault((user) => user.Email == user.Email && user.Password == user.Password) ?? null;
+        return _dbContext.Users.FirstOrDefault((user) => user.Email == user.Email && user.Password == user.Password) ?? null;
+    }
+
+    public void SaveChanges() {
+        _dbContext.SaveChanges();
     }
 }

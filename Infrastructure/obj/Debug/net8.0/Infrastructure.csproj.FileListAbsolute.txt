@@ -16,3 +16,5 @@
 /home/shivesh/Documents/dotnet/clean_setup/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
 /home/shivesh/Documents/dotnet/clean_setup/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json
 /home/shivesh/Documents/dotnet/clean_setup/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
+/home/shivesh/Documents/dotnet/clean_setup/Infrastructure/bin/Debug/net8.0/Infrastructure.runtimeconfig.json
+/home/shivesh/Documents/dotnet/clean_setup/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
